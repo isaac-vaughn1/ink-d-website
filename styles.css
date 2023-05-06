@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 125%;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+}
+
+.inkLogo {
+    height: auto;
+    width: 25%;
+}
+
