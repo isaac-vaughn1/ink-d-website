@@ -265,7 +265,7 @@ footer {
   height: 100%;
 }
 
-.aboutTxt {
+.topTxt {
   position: absolute;
   top: 0;
   left: 0;
@@ -281,31 +281,38 @@ footer {
   padding: 20px;
 }
 
-.aboutTxt h1 {
+.topTxt h1 {
   font-size: 48px;
   margin-bottom: 20px;
   color: #ffffff;
   padding-top: 0%;
   padding: 25px;
   background-color: rgba(86, 85, 85, 0.5);
-  
 }
 
-.aboutTopImage {
+.topImage {
   height: 35em;
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
 }
 
-.whoTitle {
+.miniTitle {
   border-bottom: solid rgba(236, 92, 36, 0.5) 1px;
   text-align: center;
   font-size: 2em;
   padding: 1em 0 1em 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-.whoTxt {
+.subTitle {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em 0 1em 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subTxt {
   padding-top: 1em;
   padding-bottom: 2em;
   font-size: large;
@@ -333,8 +340,7 @@ footer {
   height: 100%;
   object-fit: cover;
   padding: 0 1em 0 1em;
-  border-radius: 5%;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px 1px 0.5px black;
 }
 
 .infoTxt {
@@ -347,7 +353,7 @@ footer {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   border: solid #f0482c 1px;
-  margin-top:1em;
+  margin-top: 1em;
   background-color: #343434;
 }
 
@@ -367,4 +373,142 @@ footer {
   color: white;
 }
 
+.contactLink:hover {
+  color: #ec5c24;
+}
+
 /*Products Page Styles*/
+.prodBody {
+  margin: 2em 10em 0 10em;
+}
+
+.products {
+  background-image: url("images/prodTop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Image gallery via w3scools (I love grids!!)*/
+.pastGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.pastGallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 1px black;
+}
+
+.contactLink2 {
+  color: #ec5c24;
+}
+
+.contactLink2:hover {
+  color: #343434;
+}
+
+/*Media Queries :(*/
+
+@media (max-width: 480px) {/* Media query for mobile devices */
+  
+  body{
+    overflow-x: hidden;
+  }
+
+  .links {
+    margin: auto;
+    text-decoration: underline;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .footLink {
+    text-decoration: underline;
+  }
+  /*queries for home page*/
+  .vetTxt {
+    display:none;
+  }
+
+  .breakImg h1 {
+    display:none;
+  }
+
+  .overlay a{
+    font-size: 12px;
+  }
+
+  /*Queries for about page (some products page)*/
+  .aboutBody {
+    margin: auto;
+  }
+
+  .aboutUs {
+    display: none;
+  }
+
+  .topTxt {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.00001);
+  }
+
+  .topImage{
+    height: 10em;
+  }
+
+  .infoItem img{
+    display: none;
+  }
+
+  .infoTxt {
+    padding: 5em;
+  }
+
+  .infoTxt h2 {
+    font-size: large;
+  }
+
+  .infoTxt p{
+    font-size: small;
+  }
+
+  .infoSection {
+    display: block;
+    margin-left: 2em;
+  }
+
+  /*Queries for products page*/
+  .prodBody {
+    margin: auto;
+  }
+
+  .products {
+    display: none;
+  }
+
+  .pastGallery {
+    display: block;
+  }
+
+  .odd {
+    display:none;
+  }
+
+  .miniTitle .subtitle {
+    font-size: 1em;
+  }
+
+  .subTxt {
+    font-size: small;
+  }
+}
